@@ -39,7 +39,7 @@ function CompileJava() {
 }
 
 
-cp ./bin/se/lnu/http/resources/ ./resources # move resources to root folder.
+mv ./bin/se/lnu/http/resources/ ./resources # move resources to root folder.
 
 CompileJava
 CreateManiFestFile
