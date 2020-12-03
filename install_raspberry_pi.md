@@ -17,7 +17,7 @@ https://cdimage.ubuntu.com/ubuntu-mate/releases/20.04/release/ubuntu-mate-20.04.
 4. Press Flash
 5. After the flashing is done insert the sd card in your raspbarry pi.
 6. Start the installtion of ubuntu mate.
-7. After installation is done run the following command "sudo apt install openssh-server && sudo apt install net-tools"
+7. After installation is done run the following command "sudo apt install openssh-server && sudo apt install net-tools && sudo apt install openjdk-14-jdk"
 8. Enter the command "ifconfig" and take a note ip address of the rasberry pi.
 9. Now you can remove the keyboard and mouse from your pi.
 10. Start a ssh session to the raspberry pi by entering "ssh username@0.0.0.0" replace 0.0.0.0 with the acutal ip address of the pi, and the username with the usename you chosed under installation.
