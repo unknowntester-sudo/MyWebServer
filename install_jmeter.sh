@@ -8,10 +8,14 @@ FILE=$(pwd)/apache-jmeter-5.3/bin/jmeter.sh
 #apache-jmeter-5.3/bin/jmeter.sh
 if test -f "$FILE"; 
 then
-    echo "$FILE exists."
+    $FILE # start the application if exist.
 else
-echo "Installing jmeter"
+if ! test -f apache-jmeter-5.3.tgz
+then
 wget http://www.gtlib.gatech.edu/pub/apache/jmeter/binaries/apache-jmeter-5.3.tgz
+fi
+echo "Downloaded completet"
+
 tar xf apache-jmeter-5.3.tgz
 echo "Installation done"
 $(pwd)/install_jmeter.sh
